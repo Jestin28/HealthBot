@@ -5,7 +5,7 @@ from chatterbot.trainers import ListTrainer
 
 def get_response(usrText):
     bot = ChatBot('Bot',
-                  storage_adapter='chatterbot.storage.SQLStorageAdapter',
+                  storage_adapter='chatterbot.storage.SQLStorageAdapter ',
     logic_adapters=[
         {
             'import_path': 'chatterbot.logic.BestMatch'
